@@ -18,24 +18,13 @@
   <nav class="Navbar__Nav">
     <div class="Navbar__NavDesktopContainer">
       <a href="/">
-        <svg width="70px" viewBox="631 -43.6 625.4 302.6" aria-labelledby="GDGLogoTitle" alt="GDG" height="35px">
-          <path d="M779.9 108.3l101.6-58.6c23.9-13.8 32.1-44.4 18.3-68.3s-44.4-32.1-68.3-18.3L656 64.4l123.9 43.9z"
-            fill="#ea4335"></path>
-          <path
-            d="M856.4 259c17.3 0 34.1-9 43.3-25 13.8-23.9 5.6-54.5-18.3-68.3L706 64.4c-23.9-13.8-54.5-5.6-68.3 18.3s-5.6 54.5 18.3 68.3l175.5 101.3c7.9 4.5 16.5 6.7 24.9 6.7z"
-            fill="#4285f4"></path>
-          <path
-            d="M1031 259c8.5 0 17.1-2.2 24.9-6.7L1231.4 151l-122.3-44.8-103.1 59.5c-23.9 13.8-32.1 44.4-18.3 68.3 9.2 16 26 25 43.3 25z"
-            fill="#fbbc04"></path>
-          <path
-            d="M1206.4 157.7c17.3 0 34.1-9 43.3-25 13.8-23.9 5.6-54.5-18.3-68.3L1055.9-36.9c-23.9-13.8-54.4-5.6-68.2 18.3s-5.6 54.5 18.3 68.3L1181.5 151c7.8 4.5 16.4 6.7 24.9 6.7z"
-            fill="#0f9d58"></path>
-        </svg>
+        <img src="./images/chevron.svg" alt="">
       </a>
       <div class="Navbar__NavLinks">
         <a href="/" class="Navbar__StyledLink">Home</a>
-        <a href="/#about" class="Navbar__StyledLink">About</a>
         <a href="/#speed-matters" class="Navbar__StyledLink">Speed Matters</a>
+        <a href="/#services" class="Navbar__StyledLink">Services</a>
+        <a href="/#about" class="Navbar__StyledLink">About</a>
         <a href="/#testimonials" class="Navbar__StyledLink">Testimonials</a>
         <a href="/#contact" class="Navbar__StyledLink">Contact</a>
       </div>
@@ -46,38 +35,32 @@
       </div>
       <div id="mobile-menu" class="is-hidden MobileNav__MobileLinks">
         <a href="/" class="MobileNav__MobileNavLink">Home</a>
-        <a href="/#about" class="MobileNav__MobileNavLink">About</a>
         <a href="/#speed-matters" class="MobileNav__MobileNavLink">Speed Matters</a>
+        <a href="/#services" class="MobileNav__MobileNavLink">Services</a>
+        <a href="/#about" class="MobileNav__MobileNavLink">About</a>
         <a href="/#testimonials" class="MobileNav__MobileNavLink">Testimonials</a>
         <a href="/#contact" class="MobileNav__MobileNavLink">Contact</a>
       </div>
     </div>
   </nav>
-  <header class="page-header red-stripe">
-    <figure class="masthead-photo"></figure>
-    <section class="masthead-content content dark-bg">
-      <div class="content">
-        <h1 class="title">Performant <br />Web<span class="dot">.</span>Dev</h1>
-        <h2>Accelerate your website</h2>
-      </div>
-    </section>
-    <section class="dark-bg">
-      <div class="content">
-        <p id="about">Are you losing revenue to performance? <a class="link link-light" href="#">53% of mobile site visits are
-            abandoned if a page
-            takes longer than 3
-            seconds to load</a>. <a class="link link-light" href="#">Speed matters</a>, but performance engineering and tooling
-          can be
-          hard. Let me help you make
-          your web
-          application faster and implement long-term strategies for maintaining fast web applications.</p>
-      </div>
-    </section>
+  <header class="page-header red-stripe dark-bg">
+    <div class="content">
+      <h1 class="title">Performant Web</h1>
+      <p class="tagline">Accelerate the web</p>
+    </div>
   </header>
 
   <main class="container">
-    <section id="speed-matters" class="dark-bg bg-gradient">
+    <section>
       <div class="content">
+        <p class="lead">Are you losing revenue due to performance?</p>
+        <p>53% of mobile site visits are abandoned if a page takes longer than 3
+          seconds to load. Speed matters, but performance engineering and tooling can be hard. Let me help you make your web
+          application faster and implement long-term strategies for maintaining fast web applications.</p>
+      </div>
+    </section>
+    <section class="dark-bg bg-gradient">
+      <div id="speed-matters"  class="content OffsetNavTarget">
         <h2>Speed Matters</h2>
         <article>
           <p class="quote">At Pinterest, improving performance led to a 103% increase in weekly active users.</p>
@@ -85,8 +68,9 @@
         </article>
       </div>
     </section>
-    <section id="services">
-      <div class="content">
+
+    <section class="full-width">
+      <div id="services" class="OffsetNavTarget">
         <header>
           <h2>Services</h2>
           <p>I work with companies of all sizes and industries. Let's get started today.</p>
@@ -109,10 +93,8 @@
       </div>
     </section>
 
-    <section><img src="./images/chevron.svg" alt=""></section>
-
-    <section id="who" class="bg-grey">
-      <div class="content">
+    <section class="bg-grey border-top-chevron border-bottom-chevron">
+      <div id="about" class="content OffsetNavTarget">
         <h2>Who am I</h2>
         <p>Hi, I'm Sia. I'm a Google Developer Expert in Web Technologies, and I specialize in strategically improving
             performance of sites and applications on the web.</p>
@@ -126,9 +108,8 @@
       </div>
     </section>
 
-    <section><img src="./images/chevron.svg" alt=""></section>
-    <section id="testimonials" class="dark-bg bg-gradient">
-      <div class="content">
+    <section class="dark-bg bg-gradient">
+      <div id="testimonials" class="content OffsetNavTarget">
         <h2>Testimonials</h2>
         <article>
           <p class="quote">Sia was my instructor at Tech Talent South. Thanks to her I've been able to move forward in my career as a Software
@@ -138,8 +119,8 @@
         </article>
       </div>
     </section>
-    <section id="contact">
-      <div class="content">
+    <section class="bg-grey border-top-chevron border-bottom-chevron">
+      <div id="contact" class="content OffsetNavTarget">
         <h2>Let's get to work</h2>
         <p>(contact form)</p>
       </div>
@@ -183,6 +164,7 @@
         <button class="button">Contact us</button>
       </article>
     </section> -->
+
   </main>
   <footer class="dark-bg bg-charcoal">
     <div class="content">
