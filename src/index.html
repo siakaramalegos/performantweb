@@ -8,16 +8,197 @@
   <title>Performant Web</title>
   <meta name="description"
     content="Front-end web performance training and consulting, tailored to your team's needs." />
-  <link rel="stylesheet" href="./style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700|Titillium+Web:400,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <nav class="Navbar__Nav">
+    <div class="Navbar__NavDesktopContainer">
+      <a href="/">
+        <svg width="70px" viewBox="631 -43.6 625.4 302.6" aria-labelledby="GDGLogoTitle" alt="GDG" height="35px">
+          <path d="M779.9 108.3l101.6-58.6c23.9-13.8 32.1-44.4 18.3-68.3s-44.4-32.1-68.3-18.3L656 64.4l123.9 43.9z"
+            fill="#ea4335"></path>
+          <path
+            d="M856.4 259c17.3 0 34.1-9 43.3-25 13.8-23.9 5.6-54.5-18.3-68.3L706 64.4c-23.9-13.8-54.5-5.6-68.3 18.3s-5.6 54.5 18.3 68.3l175.5 101.3c7.9 4.5 16.5 6.7 24.9 6.7z"
+            fill="#4285f4"></path>
+          <path
+            d="M1031 259c8.5 0 17.1-2.2 24.9-6.7L1231.4 151l-122.3-44.8-103.1 59.5c-23.9 13.8-32.1 44.4-18.3 68.3 9.2 16 26 25 43.3 25z"
+            fill="#fbbc04"></path>
+          <path
+            d="M1206.4 157.7c17.3 0 34.1-9 43.3-25 13.8-23.9 5.6-54.5-18.3-68.3L1055.9-36.9c-23.9-13.8-54.4-5.6-68.2 18.3s-5.6 54.5 18.3 68.3L1181.5 151c7.8 4.5 16.4 6.7 24.9 6.7z"
+            fill="#0f9d58"></path>
+        </svg>
+      </a>
+      <div class="Navbar__NavLinks">
+        <a href="/" class="Navbar__StyledLink">Home</a>
+        <a href="/#about" class="Navbar__StyledLink">About</a>
+        <a href="/#speed-matters" class="Navbar__StyledLink">Speed Matters</a>
+        <a href="/#testimonials" class="Navbar__StyledLink">Testimonials</a>
+        <a href="/#contact" class="Navbar__StyledLink">Contact</a>
+      </div>
+    </div>
+    <div class="MobileNav__NavMobileContainer">
+      <div class="MobileNav__MobileTopNav">
+        <button id="menu-link" class="MobileNav__MenuLink">Menu</button>
+      </div>
+      <div id="mobile-menu" class="is-hidden MobileNav__MobileLinks">
+        <a href="/" class="MobileNav__MobileNavLink">Home</a>
+        <a href="/#about" class="MobileNav__MobileNavLink">About</a>
+        <a href="/#speed-matters" class="MobileNav__MobileNavLink">Speed Matters</a>
+        <a href="/#testimonials" class="MobileNav__MobileNavLink">Testimonials</a>
+        <a href="/#contact" class="MobileNav__MobileNavLink">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <header class="page-header red-stripe">
+    <figure class="masthead-photo"></figure>
+    <section class="masthead-content content dark-bg">
+      <div class="content">
+        <h1 class="title">Performant <br />Web<span class="dot">.</span>Dev</h1>
+        <h2>Accelerate your website</h2>
+      </div>
+    </section>
+    <section class="dark-bg">
+      <div class="content">
+        <p id="about">Are you losing revenue to performance? <a class="link link-light" href="#">53% of mobile site visits are
+            abandoned if a page
+            takes longer than 3
+            seconds to load</a>. <a class="link link-light" href="#">Speed matters</a>, but performance engineering and tooling
+          can be
+          hard. Let me help you make
+          your web
+          application faster and implement long-term strategies for maintaining fast web applications.</p>
+      </div>
+    </section>
+  </header>
+
   <main class="container">
-    <h1>Performant Web</h1>
-    <p>Thought-leadership synergistic programming filler text for your next killer app.</p>
+    <section id="speed-matters" class="dark-bg bg-gradient">
+      <div class="content">
+        <h2>Speed Matters</h2>
+        <article>
+          <p class="quote">At Pinterest, improving performance led to a 103% increase in weekly active users.</p>
+          <p class="quote-attribution"><span class="author"><a href="https://twitter.com/ZackArgyle" class="link link-light">Zack Argyle</a></span>, former engineering manager, Core Experience, at Pinterest on <a href="https://medium.com/pinterest-engineering/a-one-year-pwa-retrospective-f4a2f4129e05" class="link link-light">A one year PWA retrospective</a></p>
+        </article>
+      </div>
+    </section>
+    <section id="services">
+      <div class="content">
+        <header>
+          <h2>Services</h2>
+          <p>I work with companies of all sizes and industries. Let's get started today.</p>
+        </header>
+        <article class="bg-tint">
+          <h3>Auditing</h3>
+          <p>You want to make your site faster but don't know where to start. I can evaluate your website and codebase to provide ranked recommendations for which issues are slowing you down the most.</p>
+          <p><a href="" class="link">Tell me about your project</a></p>
+        </article>
+        <article class="bg-tint">
+          <h3>Consulting</h3>
+          <p>You're convinced a faster web is better for your business and customers, and you want to go all-in. I can coach your team to implement end-to-end performance managment from audits and improvements to ongoing continuous integration.</p>
+          <p><a href="" class="link">Tell me about your team</a></p></p>
+        </article>
+        <article class="bg-tint">
+          <h3>Training</h3>
+          <p>Onsite or remote training tailored for your team</p>
+          <p><a class="link" href="#">Request a proposal</a> or <a href="" class="link">Attend a conference workshop</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section><img src="./images/chevron.svg" alt=""></section>
+
+    <section id="who" class="bg-grey">
+      <div class="content">
+        <h2>Who am I</h2>
+        <p>Hi, I'm Sia. I'm a Google Developer Expert in Web Technologies, and I specialize in strategically improving
+            performance of sites and applications on the web.</p>
+        <article class="card">
+          <h3>Sia Karamalegos</h3>
+          <p>Sia Karamalegos is a developer, international conference speaker, and writer. She is a Google Developer Expert in Web
+          Technologies and a Women Techmakers ambassador. She co-organizes GDG New Orleans and its marquee event, DevFest New
+          Orleans. She is the founder and lead developer for Clio + Calliope Web Development and was recognized in the Silicon
+          Bayou 100, the 100 most influential and active people in tech and entrepreneurship in Louisiana. She graduated from Texas A&M University with a BS in chemical engineering and received her MBA from Harvard Business School.</p>
+        </article>
+      </div>
+    </section>
+
+    <section><img src="./images/chevron.svg" alt=""></section>
+    <section id="testimonials" class="dark-bg bg-gradient">
+      <div class="content">
+        <h2>Testimonials</h2>
+        <article>
+          <p class="quote">Sia was my instructor at Tech Talent South. Thanks to her I've been able to move forward in my career as a Software
+          Developer. Her knowledge and endless patience for our questions created a foundation that I've been building on ever
+          since. She is a fantastic teacher.</p>
+          <p class="quote-attribution"><span class="author"><a href="https://www.linkedin.com/in/ryanjhageman/" class="link link-light">Ryan Hageman</a></span>, Web Application Consultant</p>
+        </article>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="content">
+        <h2>Let's get to work</h2>
+        <p>(contact form)</p>
+      </div>
+    </section>
+
+    <!-- <section class="sample">
+      <h2>Sample components</h2>
+      <article class="bg-tint">
+        <h2>About</h2>
+        <p><a class="link" href="#">Speed matters</a>, but performance engineering and tooling can be hard. Let us help you make your web application faster and implement long-term strategies for maintaining fast web applications.</p>
+        <button class="button">Learn more</button>
+      </article>
+      <article>
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet <a class="link" href="#">consectetur</a> adipisicing elit. Est amet adipisci corrupti praesentium ad dicta?
+          Exercitationem error eius quas magnam culpa! Ad, numquam totam debitis provident fugiat iusto harum ipsa!</p>
+        <button class="button">Learn more</button>
+      </article>
+      <article class="dark-bg bg-dark">
+        <h2>Testimonials</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet adipisci corrupti <a class="link link-light" href="#">praesentium ad dicta</a>?
+          Exercitationem error eius quas magnam culpa! <a class="link link-light" href="#">Ad, numquam totam debitis</a> provident fugiat iusto harum ipsa!</p>
+        <button class="button">Click me</button>
+      </article>
+      <article class="dark-bg bg-gradient">
+        <h2>Contact</h2>
+        <p>Are you losing revenue to performance? <a class="link link-light" href="#">53% of mobile site visits are abandoned if a page takes longer than 3
+        seconds to load</a>. Pinterest reduced load times by 40% and saw a 15% increase in sign ups. <a class="link link-light" href="#">Starbucks</a> implemented a
+        2x faster time to interactive resulting in a 65% increase in rewards registrations.</p>
+        <button class="button">Contact us</button>
+      </article>
+      <article class="lower">
+        <div class="bg-img-blended">
+          <h2>Performant <br>Web<span class="dot">.</span>Dev</h2>
+        </div>
+        <p>Are you losing revenue to performance? <a class="link" href="#">53% of mobile site visits are abandoned if a page takes longer than 3
+          seconds to load</a>. Pinterest reduced load times by 40% and saw a 15% increase in sign ups. Starbucks implemented a
+          2x faster time to interactive resulting in a 65% increase in rewards registrations.</p>
+        <p><a class="link" href="#">Speed matters</a>, but performance engineering and tooling can be hard. Let us help you make your web
+          application faster and implement long-term strategies for maintaining fast web applications.</p>
+        <button class="button">Contact us</button>
+      </article>
+    </section> -->
   </main>
+  <footer class="dark-bg bg-charcoal">
+    <div class="content">
+      <p>&copy; 2019 - <script>document.write((new Date).getFullYear())</script> Clio + Calliope LLC</p>
+      <p>Credits</p>
+      Photo by Samuele Errico Piccarini on Unsplash
+      <a  href="https://unsplash.com/@samuele_piccarini?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        target="_blank" rel="noopener noreferrer"
+        title="Download free do whatever you want high-resolution photos from Samuele Errico Piccarini"><span
+          style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg"
+            style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+            <title>unsplash-logo</title>
+            <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+          </svg></span><span style="display:inline-block;padding:2px 3px">Samuele Errico Piccarini</span></a>
+    </div>
+  </footer>
 </body>
 
 </html>
