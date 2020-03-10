@@ -367,8 +367,11 @@ form label {
     font-size: 150px;
     left: -46px;
     top: 34px;}
-  section, header.page-header, footer {
+  section, header.page-header {
     margin: 48px auto;
+    padding: 48px;}
+  footer {
+    margin: 48px auto 0;
     padding: 48px;}
   .tagline {font-size: 36px;}
   article { padding: 40px; }
