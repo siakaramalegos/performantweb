@@ -306,7 +306,7 @@ article { padding: 16px; }
   /* cursor:pointer; */
   font-size:0.8em;
   font-weight:700;
-  padding: 0.5em;
+  padding: 0.5em 1em;
   text-transform:uppercase;}
 .MobileNav__MenuLink:hover{ filter: opacity(90%); }
 .MobileNav__MenuLink:focus{ filter: opacity(90%); }
