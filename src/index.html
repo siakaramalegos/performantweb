@@ -12,6 +12,23 @@
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700|Titillium+Web:400,700&display=swap"
     rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+  <link rel="manifest" href="./favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -22,7 +39,6 @@
       </a>
       <div class="Navbar__NavLinks">
         <a href="/" class="Navbar__StyledLink">Home</a>
-        <a href="/#speed-matters" class="Navbar__StyledLink">Speed Matters</a>
         <a href="/#services" class="Navbar__StyledLink">Services</a>
         <a href="/#about" class="Navbar__StyledLink">About</a>
         <a href="/#testimonials" class="Navbar__StyledLink">Testimonials</a>
@@ -35,7 +51,6 @@
       </div>
       <div id="mobile-menu" class="is-hidden MobileNav__MobileLinks">
         <a href="/" class="MobileNav__MobileNavLink">Home</a>
-        <a href="/#speed-matters" class="MobileNav__MobileNavLink">Speed Matters</a>
         <a href="/#services" class="MobileNav__MobileNavLink">Services</a>
         <a href="/#about" class="MobileNav__MobileNavLink">About</a>
         <a href="/#testimonials" class="MobileNav__MobileNavLink">Testimonials</a>
@@ -64,7 +79,7 @@
       <div class="content">
         <article>
           <p class="quote">At Pinterest, improving performance led to a 103% increase in weekly active users.</p>
-          <p class="quote-attribution"><span class="author"><a href="https://twitter.com/ZackArgyle" class="link link-light">Zack Argyle</a></span>, former engineering manager, Core Experience, at Pinterest on <a href="https://medium.com/pinterest-engineering/a-one-year-pwa-retrospective-f4a2f4129e05" class="link link-light">A one year PWA retrospective</a></p>
+          <p class="quote-attribution"><span class="author"><a href="https://twitter.com/ZackArgyle" class="link link-light">Zack Argyle</a></span>, former engineering manager at Pinterest on <a href="https://medium.com/pinterest-engineering/a-one-year-pwa-retrospective-f4a2f4129e05" class="link link-light">A one year PWA retrospective</a></p>
         </article>
       </div>
     </section>
@@ -73,7 +88,7 @@
       <div id="services" class="content OffsetNavTarget">
         <header class="span-3">
           <h2>Services</h2>
-          <p>I work with companies of all sizes and industries. Let's get started today.</p>
+          <p class="text-center">I work with companies of all sizes and industries. Let's get started today.</p>
         </header>
         <article class="bg-white">
           <div class="icon">
@@ -122,7 +137,7 @@
         <p>Hi, I'm Sia. I'm a Google Developer Expert in Web Technologies. I specialize in strategically improving the
             performance of sites and applications on the web.</p>
         <article class="card">
-          <div class="headshot"></div>
+          <img class="headshot" src="./images/headshot_300.jpg" alt="Sia Karamalegos" width="200" height="200">
           <div class="business-card">
             <h3>Sia Karamalegos</h3>
             <em class="roles">Performance Engineer, Web Developer, and International Conference Speaker</em>
@@ -181,29 +196,46 @@
     <section class="dark-bg bg-gradient">
       <div id="testimonials" class="content OffsetNavTarget">
         <h2>Testimonials</h2>
-        <article>
+        <article class="grid-quote">
           <p class="quote">Sia’s workshop gave me the guidance and tools I needed to finally begin diagnosing real performance problems in my web
           applications. Her course shed light on how to solve the issues I knew I had and also exposed problems I
           hadn't discovered yet. Sia’s Measuring Web Performance workshop is well worth your time.</p>
+          <img src="./images/aundramiller.jpg" alt="Aundra Miller" width="80" height="80">
           <p class="quote-attribution"><span class="author"><a href="https://twitter.com/millerahnz" class="link link-light" target="_blank" rel="noopener noreferrer">Aundra Miller</a></span>, Software Engineer at <a href="https://www.learning.com/" target="_blank" rel="noopener noreferrer" class="link link-light">Learning.com</a></p>
         </article>
-        <article>
+        <article class="grid-quote">
           <p class="quote">Thanks to Sia's web performance tips, we got a 27% bump in page load and a 13% bump in time to first byte on our site.</p>
+          <img src="./images/vincefalconi.jpg" alt="Vince Falconi" width="80" height="80">
           <p class="quote-attribution"><span class="author"><a href="https://twitter.com/vincefalconi" class="link link-light"
                 target="_blank" rel="noopener noreferrer">Vince Falconi</a></span>, Senior Web Developer at an enterprise security company</p>
         </article>
-        <article>
+        <article class="grid-quote">
           <p class="quote">Sia has definitely mastered the art of keeping a listener engaged. Her humor and ability to communicate technical
           concepts at the same time is an amazing talent. All information was presented well and provided a long list of notes to
           take back to my company and coworkers.</p>
+          <div class="anonymous-user">
+            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="50px">
+              <path fill="hsla(4, 100%, 86%, 1)"
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+                class=""></path>
+            </svg>
+          </div>
           <p class="quote-attribution"><span class="author">Anonymous attendee</span>, feedback from <a href="https://progressivewebexperience.io/conference/clearwater/2019/12/home" target="_blank" rel="noopener noreferrer" class="link link-light">The Progressive Web Experience</a></p>
+        </article>
+        <article class="grid-quote">
+          <p class="quote">We have had Sia deliver workshops at Connect.Tech, the largest multli-platform Web and JavaScript event in the USA, over
+          the last few years. Her ability to provide a tailored learning experience for our attendees gives them the chance to
+          'level-up' quickly on topics such as Web Performance and React.</p>
+          <img src="./images/pratikpatel.png" alt="Pratik Patel" width="80" height="80">
+          <p class="quote-attribution"><span class="author"><a href="https://twitter.com/prpatel" class="link link-light"
+                target="_blank" rel="noopener noreferrer">Pratik Patel</a></span>, Co-organizer of <a href="http://connect.tech/" target="_blank" rel="noopener noreferrer" class="link link-light">Connect.Tech</a></p>
         </article>
       </div>
     </section>
     <section class="bg-grey border-top-chevron border-bottom-chevron">
       <div id="contact" class="content OffsetNavTarget">
         <h2>Let's get to work</h2>
-        <p>Ready to start your next project with me? Fill out the form below, and I'll be in touch!</p>
+        <p class="text-center">Ready to start your next project with me? Fill out the form below, and I'll be in touch!</p>
         <form class="form" name="contact" method="POST" data-netlify="true">
           <label for="name">Name *
             <input type="text" id="name" name="name" required>
@@ -221,46 +253,6 @@
         </form>
       </div>
     </section>
-
-    <!-- <section class="sample">
-      <h2>Sample components</h2>
-      <article class="bg-tint">
-        <h2>About</h2>
-        <p><a class="link" href="#">Speed matters</a>, but performance engineering and tooling can be hard. Let us help you make your web application faster and implement long-term strategies for maintaining fast web applications.</p>
-        <button class="button">Learn more</button>
-      </article>
-      <article>
-        <h2>Services</h2>
-        <p>Lorem ipsum dolor sit amet <a class="link" href="#">consectetur</a> adipisicing elit. Est amet adipisci corrupti praesentium ad dicta?
-          Exercitationem error eius quas magnam culpa! Ad, numquam totam debitis provident fugiat iusto harum ipsa!</p>
-        <button class="button">Learn more</button>
-      </article>
-      <article class="dark-bg bg-dark">
-        <h2>Testimonials</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet adipisci corrupti <a class="link link-light" href="#">praesentium ad dicta</a>?
-          Exercitationem error eius quas magnam culpa! <a class="link link-light" href="#">Ad, numquam totam debitis</a> provident fugiat iusto harum ipsa!</p>
-        <button class="button">Click me</button>
-      </article>
-      <article class="dark-bg bg-gradient">
-        <h2>Contact</h2>
-        <p>Are you losing revenue to performance? <a class="link link-light" href="#">53% of mobile site visits are abandoned if a page takes longer than 3
-        seconds to load</a>. Pinterest reduced load times by 40% and saw a 15% increase in sign ups. <a class="link link-light" href="#">Starbucks</a> implemented a
-        2x faster time to interactive resulting in a 65% increase in rewards registrations.</p>
-        <button class="button">Contact us</button>
-      </article>
-      <article class="lower">
-        <div class="bg-img-blended">
-          <h2>Performant <br>Web<span class="dot">.</span>Dev</h2>
-        </div>
-        <p>Are you losing revenue to performance? <a class="link" href="#">53% of mobile site visits are abandoned if a page takes longer than 3
-          seconds to load</a>. Pinterest reduced load times by 40% and saw a 15% increase in sign ups. Starbucks implemented a
-          2x faster time to interactive resulting in a 65% increase in rewards registrations.</p>
-        <p><a class="link" href="#">Speed matters</a>, but performance engineering and tooling can be hard. Let us help you make your web
-          application faster and implement long-term strategies for maintaining fast web applications.</p>
-        <button class="button">Contact us</button>
-      </article>
-    </section> -->
-
   </main>
   <footer class="dark-bg bg-charcoal">
     <div class="content">
