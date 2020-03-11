@@ -35,24 +35,52 @@
   --grey-4: hsla(201, 22%, 48%, 1);
   --grey-5: hsla(201, 30%, 30%, 1);
   --grey-6: hsla(201, 35%, 24%, 1);
+
+  --body-font: 'Oxygen', Arial, Helvetica, sans-serif;
+  --display-font: 'Audiowide', Arial, Helvetica, sans-serif;
+  --quote-font: Georgia, 'Times New Roman', Times, serif;
 }
 
-@font-face{
-  font-family:"Ethnocentric W05 Book Italic";
-  src:url("fonts/4b94df3c-9ccb-4e4c-91e9-c67ab6aacabb.eot?#iefix");
-  src:url("fonts/4b94df3c-9ccb-4e4c-91e9-c67ab6aacabb.eot?#iefix") format("eot"),url("fonts/6ec64873-9576-4905-b545-6626b32ad005.woff2") format("woff2"),url("fonts/62c644d3-7a49-4193-8b12-559a69885eb8.woff") format("woff"),url("fonts/ba5fd662-02f0-4706-9b8a-3b4e2291bfba.ttf") format("truetype");
+/* audiowide-regular - latin */
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/audiowide-v8-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Audiowide Regular'), local('Audiowide-Regular'),
+       url('./fonts/audiowide-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/audiowide-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/audiowide-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/audiowide-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/audiowide-v8-latin-regular.svg#Audiowide') format('svg'); /* Legacy iOS */
+}
+
+/* oxygen-regular - latin */
+@font-face {
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/oxygen-v9-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Oxygen Regular'), local('Oxygen-Regular'),
+       url('./fonts/oxygen-v9-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./fonts/oxygen-v9-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('./fonts/oxygen-v9-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('./fonts/oxygen-v9-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('./fonts/oxygen-v9-latin-regular.svg#Oxygen') format('svg'); /* Legacy iOS */
 }
 
 body {
   color: var(--grey-6);
-  font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+  font-family: var(--body-font);
   padding: 69px 0 0 0;
   margin: 0;
 }
 
-
+/* okay uppercase    */
 h1, h2, h3 {
-  font-family: 'Ethnocentric W05 Book Italic', Arial, Helvetica, sans-serif;
+  font-family: var(--display-font);
+  font-weight: 700;
+  text-transform: uppercase;
   color: var(--blue-4);
 }
 h1 { font-size: 48px; margin: 32px 0; }
@@ -99,7 +127,7 @@ p.lead {
   text-transform: uppercase;}
 .quote {
   grid-column: span 2;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: var(--quote-font);
   font-size: 20px;
   font-style: italic;
   position: relative;
@@ -144,7 +172,7 @@ p.lead {
   background-color: var(--red-6);
   box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
   color: white;
-  font-family: 'Oxygen', Arial, Helvetica, sans-serif;
+  font-family: var(--body-font);
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -344,10 +372,10 @@ article { padding: 16px; }
 .form input {
   height: 2rem;}
 .form input, .form textarea {
-  border: 1px solid var(--grey-20);
-  color: var(--grey-80);
+  border: none;
+  color: var(--grey-5);
   display: block;
-  font-family: 'Recursive', Arial, Helvetica, sans-serif;
+  font-family: var(--body-font);
   font-size: 16px;
   margin: 4px 0;
   padding: 4px;
