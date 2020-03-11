@@ -8,6 +8,9 @@
   <title>Performant Web</title>
   <meta name="description"
     content="Front-end web performance training and consulting, tailored to your team's needs." />
+
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/audiowide-v8-latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="./fonts/oxygen-v9-latin-regular.woff2" crossorigin>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
   <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
@@ -32,7 +35,7 @@
 <body>
   <nav class="Navbar__Nav">
     <div class="Navbar__NavDesktopContainer">
-      <a href="/">
+      <a href="/" aria-label="Home">
         <img src="./images/chevron.svg" alt="">
       </a>
       <div class="Navbar__NavLinks">
@@ -78,7 +81,7 @@
       <div class="content">
         <article class="grid-quote">
           <p class="quote">At Pinterest, improving performance led to a 103% increase in weekly active users.</p>
-          <img src="./images/zackargyle.jpg" alt="Zack Argyle" width="80" height="80">
+          <img src="./images/zackargyle_80.jpg" srcset="./images/zackargyle_80.jpg 80w, ./images/zackargyle_160.jpg 160w" sizes="80px" alt="Zack Argyle" width="80" height="80">
           <p class="quote-attribution"><span class="author"><a href="https://twitter.com/ZackArgyle" class="link link-light" target="_blank" rel="noopener noreferrer">Zack Argyle</a></span>, former engineering manager at Pinterest on <a href="https://medium.com/pinterest-engineering/a-one-year-pwa-retrospective-f4a2f4129e05" target="_blank" rel="noopener noreferrer" class="link link-light">A one year PWA retrospective</a></p>
         </article>
       </div>
@@ -200,12 +203,12 @@
           <p class="quote">Sia’s workshop gave me the guidance and tools I needed to finally begin diagnosing real performance problems in my web
           applications. Her course shed light on how to solve the issues I knew I had and also exposed problems I
           hadn't discovered yet. Sia’s Measuring Web Performance workshop is well worth your time.</p>
-          <img src="./images/aundramiller.jpg" alt="Aundra Miller" width="80" height="80">
+          <img src="./images/aundramiller_80.jpg" srcset="./images/aundramiller_80.jpg 80w, ./images/aundramiller_160.jpg 160w" sizes="80px" alt="Aundra Miller" width="80" height="80">
           <p class="quote-attribution"><span class="author"><a href="https://twitter.com/millerahnz" class="link link-light" target="_blank" rel="noopener noreferrer">Aundra Miller</a></span>, Software Engineer at <a href="https://www.learning.com/" target="_blank" rel="noopener noreferrer" class="link link-light">Learning.com</a></p>
         </article>
         <article class="grid-quote">
           <p class="quote">Thanks to Sia's web performance tips, we got a 27% bump in page load and a 13% bump in time to first byte on our site.</p>
-          <img src="./images/vincefalconi.jpg" alt="Vince Falconi" width="80" height="80">
+          <img src="./images/vincefalconi_80.jpg" srcset="./images/vincefalconi_80.jpg 80w, ./images/vincefalconi_160.jpg 160w" sizes="80px" alt="Vince Falconi" width="80" height="80">
           <p class="quote-attribution"><span class="author"><a href="https://twitter.com/vincefalconi" class="link link-light"
                 target="_blank" rel="noopener noreferrer">Vince Falconi</a></span>, Senior Web Developer at an enterprise security company</p>
         </article>
@@ -226,7 +229,7 @@
           <p class="quote">We have had Sia deliver workshops at Connect.Tech, the largest multli-platform Web and JavaScript event in the USA, over
           the last few years. Her ability to provide a tailored learning experience for our attendees gives them the chance to
           'level-up' quickly on topics such as Web Performance and React.</p>
-          <img src="./images/pratikpatel.png" alt="Pratik Patel" width="80" height="80">
+          <img src="./images/pratikpatel_80.jpg" srcset="./images/pratikpatel_80.jpg 80w, ./images/pratikpatel_160.jpg 160w" sizes="80px" alt="Pratik Patel" width="80" height="80">
           <p class="quote-attribution"><span class="author"><a href="https://twitter.com/prpatel" class="link link-light"
                 target="_blank" rel="noopener noreferrer">Pratik Patel</a></span>, Co-organizer of <a href="http://connect.tech/" target="_blank" rel="noopener noreferrer" class="link link-light">Connect.Tech</a></p>
         </article>
