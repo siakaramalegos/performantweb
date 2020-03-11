@@ -27,3 +27,5 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+const yearNode = document.getElementById('currentYear')
+yearNode.innerHTML = (new Date).getFullYear()

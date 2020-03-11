@@ -333,7 +333,7 @@ article { padding: 16px; }
   .MobileNav__MobileNavLink:focus{ background-color:var(--grey-0);color:var(--blue-4);}
   .MobileNav__MobileNavLink:last-of-type{border-bottom:1px solid var(--grey-0);}
 .MobileNav__MenuLink{
-  background-color:var(--blue-4);
+  background-color:var(--blue-4d);
   border: none;
   box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
   color: white;
