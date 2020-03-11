@@ -142,12 +142,14 @@ p.lead {
 .button {
   border: none;
   background-color: var(--red-6);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.12);
   color: white;
   font-family: 'Oxygen', Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 8px 16px;
+  text-decoration: none;
   text-transform: uppercase;
 }
 .button:hover { background-color: var(--red-5d); }
