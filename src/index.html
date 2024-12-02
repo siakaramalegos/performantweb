@@ -30,6 +30,8 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -262,6 +264,39 @@
       <p style="text-align: center;">&copy; 2019 - <span id="currentYear">2020</span> Clio + Calliope LLC</p>
     </div>
   </footer>
+
+  <script>
+    function closeMenu() {
+      const menu = document.getElementById('mobile-menu')
+      menu.classList.remove('is-visible')
+      menu.classList.add('is-hidden')
+    }
+
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu')
+
+      if (menu.classList.contains('is-hidden')) {
+        menu.classList.remove('is-hidden')
+        menu.classList.add('is-visible')
+      } else {
+        menu.classList.remove('is-visible')
+        menu.classList.add('is-hidden')
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuLink = document.getElementById('menu-link')
+      menuLink.addEventListener('click', toggleMenu)
+      const links = document.querySelectorAll('.MobileNav__MobileNavLink')
+      links.forEach(function (element) {
+        element.addEventListener('click', closeMenu)
+      })
+    })
+
+    const yearNode = document.getElementById('currentYear')
+    yearNode.innerHTML = (new Date).getFullYear()
+
+  </script>
 </body>
 
 </html>
